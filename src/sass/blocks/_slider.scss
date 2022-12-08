@@ -1,0 +1,102 @@
+.slider {
+	width: 100%;
+	height: 590px;
+	&__container {
+		box-sizing: border-box;
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+	&__slide {
+		position: relative;
+		img {
+			width: 100%;
+			height: 590px;
+		}
+		&-img {
+			position: absolute;
+		}
+		&-descr {
+			color: #fff;
+			position: relative;
+			h3 {
+				width: 600px;
+				font-family: 'Jura', sans-serif;
+				font-weight: 400;
+				font-size: 41px;
+				line-height: 48px;
+				padding: 150px 0 0 70px;
+			}
+			p {
+				width: 470px;
+				margin-top: 21px;
+				font-size: 19px;
+				line-height: 23px;
+				padding-left: 70px;
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
+	.swiper-pagination {
+		margin-bottom: 61px;
+		&-bullet {
+			color: #fff;
+			z-index: 10;
+			opacity: 1;
+			background: rgba($color: #000000, $alpha: 0);
+			&-active {
+				background: $active;
+				width: 20px;
+				height: 20px;
+				background: #fff;
+				border-radius: 50%;
+			}
+		}
+	}
+	.swiper-button {
+		&-prev {
+			left: 0;
+		}
+		&-next {
+			right: 0;
+		}
+	}
+	.swiper-pagination-horizontal {
+		max-width: 160px;
+		margin-left: 50%;
+		transform: translate(-50%);
+		display: flex;
+		justify-content: space-between;
+	}
+	.swiper-button-wrapper {
+		position: relative;
+		bottom: 76px;
+		i {
+			display: flex;
+			justify-content: center;
+			font-size: 15px;
+			align-items: center;
+			color: #fff;
+			padding: 22px 17px;
+			border: 1px solid rgba(255,255,255, 0.1);
+			border-radius: 50%;
+			transition: 0.2s;
+			&:hover {
+				border: 1px solid $active;
+				scale: 1.1;
+			}
+		}
+	}
+	.swiper-button-prev {
+		position: absolute;
+		&:after {
+			content: "";		
+		}
+	}
+	.swiper-button-next {
+		position: absolute;
+		&:after {
+			content: "";		
+		}
+	}

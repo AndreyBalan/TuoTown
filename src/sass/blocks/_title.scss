@@ -1,0 +1,20 @@
+.title {
+	font-family: 'Jura';
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 42px;
+	color: #fff;
+	&_footer {
+		font-family: 'Montserrat';
+		font-weight: 600;
+		font-size: 17px;
+	}
+}
+
+.subtitle {
+	margin-top: 43px;
+	font-family: 'Jura';
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 36px;
+}

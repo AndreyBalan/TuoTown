@@ -1,0 +1,29 @@
+.about {
+	padding: 60px 0;
+	border-bottom: 1px solid $text;
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 22px;
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+	&__block-1 {
+		display: flex;
+		gap: 80px;
+		p {
+			margin-top: 50px;
+			width: 672px;
+		}
+	}
+	&__block-2 {
+		display: flex;
+		gap: 80px;
+		margin-top: 40px;
+		p:nth-child(2) {
+			margin-top: 27px;
+		}
+	}
+	
+}
