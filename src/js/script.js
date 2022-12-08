@@ -6,6 +6,7 @@ new Swiper('.slider__container', {
 	},
 	pagination: {
 		el: ".swiper-pagination",
+        clickable: true,
 		renderBullet: function(index, className) {
 			return '<span class="' + className + '">' + (index + 1) + '</span>';
 		}
@@ -42,3 +43,15 @@ function onTabClick(item) {
 }
 
 document.querySelector('.tabs__nav-btn').click();
+
+const hamburger = document.querySelector('.hamburger'),
+      menu = document.querySelector('.menu'),
+      closeElem = document.querySelector('.menu__close');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.add('active');
+});
+
+closeElem.addEventListener('click', () => {
+    menu.classList.remove('active');
+});
